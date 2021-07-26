@@ -19,7 +19,7 @@
   },
   "scripts": {
     "start": "craco start",
-    "build": "craco build",
+    "build": "craco build && npx tailwindcss build src/assets/index.css -o build/dist/style.css",
     "test": "craco test",
     "eject": "craco eject"
   },
