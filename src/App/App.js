@@ -5,18 +5,23 @@ import Footer from "../components/Footer";
 import Loader from "../components/Loader";
 
 const App = () => {
+  /*
+   i use useState to create a state variable that will be used in the render function
+  */
   const [state, setState] = useState([]);
   const [load, setLoad] = useState(false);
 
+  // update the state variable when the user clicks the button
   const updateData = () => {
+    // firebase get all the data
     firebase.db
-      .collection("full_excuse")
+      .collection(process.env.REACT_APP_COLLECTION)
       .get()
       .then((snapshot) => {
         let data = [];
         snapshot.forEach((doc) => {
-          let contact = Object.assign({ id: doc.id }, doc.data());
-          data.push(contact);
+          let quote = Object.assign({ id: doc.id }, doc.data());
+          data.push(quote);
         });
         setState({
           data,

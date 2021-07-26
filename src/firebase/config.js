@@ -1,3 +1,5 @@
+// add auth to config
+import "firebase/auth";
 import dotenv from "dotenv";
 dotenv.config();
 
