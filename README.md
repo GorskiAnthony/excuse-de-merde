@@ -1,70 +1,56 @@
-# Getting Started with Create React App
+# Excuse de merde
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Version](https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000)
+[![Commit](https://img.shields.io/github/last-commit/GorskiAnthony/excuse-de-merde)](https://github.com/GorskiAnthony/templateReadme)
+[![Twitter: Gorski_Anthony](https://img.shields.io/twitter/follow/Gorski_Anthony.svg?style=social)](https://twitter.com/Gorski_anthony)
+[![Github](https://img.shields.io/github/followers/GorskiAnthony?style=social)](https://github.com/GorskiAnthony)
 
-## Available Scripts
+> Excuse de merde est un site web qui permet de créer des excuse de merde si vous êtes à court d'idées.
 
-In the project directory, you can run:
+## Homepage 🏠
 
-### `yarn start`
+![](./_ressources/homepage.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Install ⚙️
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### With NPM
 
-### `yarn test`
+```sh
+$ git clone {project}
+$ cd {project}
+$ npm install
+$ npm start
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### With Yarn
 
-### `yarn build`
+```sh
+$ git clone {project}
+$ cd {project}
+$ yarn 
+$ yarn start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+N'oublier pas de créer un fichier `.env` à la racine du projet avec les variables suivantes :
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```sh
+REACT_APP_API_KEY= YOUR_API_KEY
+REACT_APP_AUTH_DOMAIN= YOUR_AUTH_DOMAIN
+REACT_APP_PROJECT_ID= YOUR_PROJECT_ID
+REACT_APP_STORAGE_BUCKET= YOUR_STORAGE_BUCKET
+REACT_APP_MESSAGING_SENDER_ID= YOUR_SENDER_ID
+REACT_APP_APP_ID= YOUR_APP_ID
+```
 
-### `yarn eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Author 👤
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+**Anthony Gorski**
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- Website: [agorski.fr](https://www.agorski.fr)
+- Twitter: [@anthony](https://twitter.com/Gorski_Anthony)
+- Github: [@anthony](https://github.com/GorskiAnthony)
+- LinkedIn: [@anthony](https://linkedin.com/in/anthony-gorski)
