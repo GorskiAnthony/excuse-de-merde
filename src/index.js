@@ -11,9 +11,12 @@ ReactDOM.render(
   <React.StrictMode>
     <Router>
       <Switch>
-        <Route exact path="/" component={App} />
-        <Route exact path="/admin" component={Admin} />
-        <Route exact path="/admin/dashboard" component={Dashboard} />
+        <Route exact path="/" component={(props) => <App {...props} />} />
+        <Route path="/admin" component={(props) => <Admin {...props} />} />
+        <Route
+          path="/admin/dashboard"
+          component={(props) => <Dashboard {...props} />}
+        />
       </Switch>
     </Router>
   </React.StrictMode>,
