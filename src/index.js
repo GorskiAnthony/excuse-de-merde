@@ -1,24 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./App/App";
-import Admin from "./App/pages/Admin";
-import Dashboard from "./App/pages/Dashboard";
 import "./assets/index.css";
+import App from "./App/App";
 import reportWebVitals from "./reportWebVitals";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
-      <Switch>
-        <Route exact path="/" component={(props) => <App {...props} />} />
-        <Route path="/admin" component={(props) => <Admin {...props} />} />
-        <Route
-          path="/admin/dashboard"
-          component={(props) => <Dashboard {...props} />}
-        />
-      </Switch>
-    </Router>
+    <App />
   </React.StrictMode>,
   document.getElementById("root")
 );

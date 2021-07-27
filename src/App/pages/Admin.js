@@ -2,7 +2,7 @@ import React from "react";
 import { LockClosedIcon } from "@heroicons/react/solid";
 import firebase from "../../firebase/firebase";
 
-const Admin = () => {
+const Admin = ({ handleLog, history }) => {
   // Get the admin profile
   const handleLogin = (e) => {
     e.preventDefault();
@@ -13,11 +13,13 @@ const Admin = () => {
           .auth()
           .signInWithEmailAndPassword(email.value, password.value)
           .then(() => {
-            console.log(`Logged in as ${email.value}`);
-            window.location.href = "/admin/dashboard";
+            // console.log(`Logged in as ${email.value}`);
+            handleLog(email.value);
+            history.push = "/admin/dashboard";
           })
           .catch((error) => {
             console.log(`An error occurred: ${error}`);
+            history.push = "/admin";
           });
       } else {
         alert("Wrong password");
