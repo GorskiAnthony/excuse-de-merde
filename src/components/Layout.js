@@ -15,7 +15,7 @@ const Layout = ({ children, isActive }) => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 relative">
         <div className="sm:block">
           <div className="border-b border-gray-200">
-            <nav className="-mb-px flex space-x-8" aria-label="Tabs">
+            <nav className="-mb-px flex space-x-6" aria-label="Tabs">
               {tabs.map((tab) => (
                 <a
                   key={tab.name}

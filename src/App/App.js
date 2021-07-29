@@ -25,10 +25,10 @@ const App = () => {
             <Add {...props} isActive={isActive} setActive={setActive} />
           )}
         />
-        <Route
+        {/* <Route
           path="/dashboard"
           component={(props) => <Dashboard {...props} />}
-        />
+        /> */}
       </Switch>
     </Router>
   );
