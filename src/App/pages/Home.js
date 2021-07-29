@@ -21,7 +21,9 @@ const App = () => {
         let data = [];
         snapshot.forEach((doc) => {
           let quote = Object.assign({ id: doc.id }, doc.data());
-          data.push(quote);
+          if (quote.isValid) {
+            data.push(quote);
+          }
         });
         setState({
           data,
