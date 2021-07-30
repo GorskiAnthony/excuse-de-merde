@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { ClipboardCopyIcon, RefreshIcon } from "@heroicons/react/solid";
 
 const Single = ({ state }) => {
   const { data } = state;
@@ -9,6 +10,10 @@ const Single = ({ state }) => {
 
   const handleClick = () => {
     setValue(data[getRandomInt(data.length)].details);
+  };
+
+  const handleCopy = () => {
+    navigator.clipboard.writeText(value);
   };
 
   const [value, setValue] = useState(data[getRandomInt(data.length)].details);
@@ -26,13 +31,29 @@ const Single = ({ state }) => {
           </div>
         </div>
       </div>
-      <button
-        type="button"
-        onClick={handleClick}
-        className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-full text-white bg-indigo-600 hover:bg-indigo-700 shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
-      >
-        Une autre excuse de merde
-      </button>
+      <div className="grid gap-2 md:grid-cols-2 grid-cols-1">
+        <button
+          type="button"
+          onClick={handleClick}
+          className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-indigo-600 hover:bg-indigo-700 shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+        >
+          <RefreshIcon className="w-5 h-5 text-gray-50 " aria-hidden="true" />
+          <span className="ml-3"></span>
+          Une autre excuse de merde
+        </button>
+        <button
+          type="button"
+          onClick={handleCopy}
+          className="inline-flex items-center px-6 py-3 border border-transparent text-base font-medium rounded-lg text-white bg-indigo-600 hover:bg-indigo-700 shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+        >
+          <ClipboardCopyIcon
+            className="w-5 h-5 text-gray-50 "
+            aria-hidden="true"
+          />
+          <span className="ml-3"></span>
+          Copier cette excuse de merde
+        </button>
+      </div>
     </div>
   );
 };

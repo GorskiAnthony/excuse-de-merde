@@ -11,8 +11,8 @@ const Layout = ({ children, isActive }) => {
     return classes.filter(Boolean).join(" ");
   }
   return (
-    <>
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-8 relative">
+    <div className="flex min-h-screen flex-col justify-between">
+      <div className="max-w-7xl px-4 sm:px-6 lg:px-8 mb-8 relative">
         <div className="sm:block">
           <div className="border-b border-gray-200">
             <nav className="-mb-px flex space-x-6" aria-label="Tabs">
@@ -38,7 +38,7 @@ const Layout = ({ children, isActive }) => {
         <div className="max-w-3xl mx-auto pt-16">{children}</div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 };
 
