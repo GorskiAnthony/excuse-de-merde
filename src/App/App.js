@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import Home from "./pages/Home";
-// import Dashboard from "./pages/Dashboard";
 import Add from "./pages/Add";
 import "../assets/index.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
@@ -25,10 +24,6 @@ const App = () => {
             <Add {...props} isActive={isActive} setActive={setActive} />
           )}
         />
-        {/* <Route
-          path="/dashboard"
-          component={(props) => <Dashboard {...props} />}
-        /> */}
       </Switch>
     </Router>
   );

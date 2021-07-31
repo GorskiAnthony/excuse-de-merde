@@ -1,15 +1,24 @@
 # Excuse de merde
 
-![Version](https://img.shields.io/badge/version-0.1.0-blue.svg?cacheSeconds=2592000)
+![Version](https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000)
 [![Commit](https://img.shields.io/github/last-commit/GorskiAnthony/excuse-de-merde)](https://github.com/GorskiAnthony/templateReadme)
 [![Twitter: Gorski_Anthony](https://img.shields.io/twitter/follow/Gorski_Anthony.svg?style=social)](https://twitter.com/Gorski_anthony)
 [![Github](https://img.shields.io/github/followers/GorskiAnthony?style=social)](https://github.com/GorskiAnthony)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/61cee14d-e38f-4c1b-825f-de1762cdea3e/deploy-status)](https://app.netlify.com/sites/beta-excusedemerde/deploys)
 
 > Excuse de merde est un site web qui permet de créer des excuse de merde si vous êtes à court d'idées.
+
+## Stack technique
+
+- [Firebase](https://firebase.google.com/)
+- [React](https://facebook.github.io/react/)
+- [Netlify](https://www.netlify.com/)
+- [Script Google](https://www.google.com/script/start/)
 
 ## Homepage 🏠
 
 ![](./_ressources/homepage.png)
+![](./_ressources/mobile.png)
 
 ## Install ⚙️
 
