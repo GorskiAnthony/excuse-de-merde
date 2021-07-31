@@ -1,5 +1,7 @@
 import React, { useState } from "react";
+import Toastify from "toastify-js";
 import { ClipboardCopyIcon, RefreshIcon } from "@heroicons/react/solid";
+import "toastify-js/src/toastify.css";
 
 const Single = ({ state }) => {
   const { data } = state;
@@ -14,6 +16,14 @@ const Single = ({ state }) => {
 
   const handleCopy = () => {
     navigator.clipboard.writeText(value);
+    Toastify({
+      text: "C'est bien copiée !",
+      duration: 3000,
+      gravity: "top", // `top` or `bottom`
+      position: "right", // `left`, `center` or `right`
+      backgroundColor: "linear-gradient(to right, #6366F1, #7C3AED)",
+      stopOnFocus: true, // Prevents dismissing of toast on hover
+    }).showToast();
   };
 
   const [value, setValue] = useState(data[getRandomInt(data.length)].details);
