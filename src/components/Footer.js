@@ -27,7 +27,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="bg-white w-full">
+    <footer className="bg-white w-full relative">
       <div className="max-w-7xl mx-auto py-4 md:py-12 px-4 sm:px-6 md:flex md:items-center md:justify-between lg:px-8">
         <div className="flex justify-center space-x-6 md:order-2">
           {navigation.map((item) => (
@@ -47,6 +47,18 @@ const Footer = () => {
           </p>
         </div>
       </div>
+      <a
+        href="https://www.buymeacoffee.com/gorskianthony"
+        target="_blank"
+        rel="noreferrer"
+        className="absolute -top-16 right-10"
+      >
+        <img
+          src="https://cdn.buymeacoffee.com/buttons/v2/default-blue.png"
+          alt="Buy Me A Coffee"
+          className="h-12 w-auto"
+        />
+      </a>
     </footer>
   );
 };
